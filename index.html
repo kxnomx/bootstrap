@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+   <!-- make sure custom stylesheet goes beneath bootstrap instead of above , also jquery must come before script-->
+    
+    <style>
+        * { outline: #CCC 1px solid;}
+        .redBg {
+            background-color: red;
+        }
+    </style>
+    
+</head>
+
+<body>
+<!--
+<h1>Grids</h1>
+    <div class="container redBg">
+        grid
+    </div>
+-->
+    
+    <h1>Grids</h1>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-6 col-md-3"> 1 </div>
+            <div class="col-sm-6 col-md-3"> 2 </div>
+            <div class="col-sm-6 col-md-3"> 3 </div>
+            <div class="col-sm-6 col-md-3"> 4 </div>
+            
+            <!-- columns within a row will always add to 12
+            <div class="row">
+            <div class="col-xs-4"> 1 </div>
+            <div class="col-xs-4"> 2 </div>
+            <div class="col-xs-4"> 3 </div>
+            -xs is for mobile
+            -sm is for tablets
+            -md is for desktop/laptop
+            -lg is large display screens that are wider than 200-->
+            
+        </div>
+    </div>
+
+<h1>Glyphicons</h1>
+
+<span class="glyphicon glyphicon-envelope"></span> email@gmail.com
+<br />
+I <span class="glyphicon glyphicon-heart"></span> bootstrap
+
+<h1>Collapsibles</h1>
+
+<button data-toggle="collapse" data-target="#hello"> say hello </button>
+
+<div id="hello" class="collapse">
+    HELLO!
+</div>
+
+<!--
+data target shows which element is hiding or showing. nvbar inverse is color theme
+-->
+
+<h1>Navbars</h1>
+
+<nav class="navbar navbar-inverse" style="color: white">
+    
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html"> Home </a></li>
+             <li><a href="services.html"> Services </a></li>
+              <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+    
+</nav>
+
+</body>
+</html>
